@@ -1,0 +1,39 @@
+https://api.openweathermap.org/data/2.5/weather?q=Krakow&appid=e3e54c2aa0433e86695a41a0c2afcaf7&units=metric
+
+Center(
+            child: currentIndex == 0
+                ? Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Temperature:  \u00B0C",
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        'Conditions: ',
+                        style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  )
+                : currentIndex == 1
+                    ? Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text("data"),
+                        ],
+                      )
+                    : Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text("data2"),
+                        ],
+                      )),
